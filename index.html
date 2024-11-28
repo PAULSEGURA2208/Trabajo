@@ -1,173 +1,182 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <title>Tienda Online</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+	</style>
 </head>
-
 <body>
+	<header>
+		<h1>Poleras Personalizadas "Amor en Tela"</h1>
 
+		<div class="container-icon">
+			<div class="container-cart-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" 
+			   fill="none" 
+			   viewBox="0 0 24 24" 
+			   stroke-width="1.5" 
+			   stroke="currentColor" 
+			   class="icon-cart">
 
-    <header>
-        <h1>Tienda de Poleras</h1>
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" 
+				/>
 
-        <div class="containericon">
+			   </svg>
+			   <div class="count-products">
+				<span id="contador-productos">0</span>
+			   </div>
+			</div>
 
-            <svg 
+			<div class="container-cart-products hidden-cart">
+				<div class="row-product">
 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke-width="1.5" 
-                stroke="currentColor" 
-                class="icon-cart"
-            >
-               <path 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 
-                    1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 
-                    2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
-                    14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 
-                    0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" 
-               />
+					<div class="cart-product">
+						<div class="info-cart-product">
+							<span class="cantidad-producto-carrito">1</span>
+							<p class="titulo-producto-carrito">Bugs Bunny</p>
+							<span class="precio-producto-carrito">s/110.00</span>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+							<path 
+							   stroke-linecap="round" 
+							   stroke-linejoin="round" 
+							   d="M6 18 18 6M6 6l12 12" 
+							/>
+						  </svg>
+						  
+					</div>
 
-            </svg>
+					
+				</div>
+				
+				<div class="cart-total">
+					<h3>Total:</h3>
+					<span class="total-pagar">$115.00</span>
+				</div>
+			</div>
+		</div>
 
-            <div class="count-products">
-                <span id="contador-productos">0</span>
-            </div>
-            <div class="container-cart-products hidden-cart">
-                <div class="cart-product">
-                    <div class="info-cart-product">
-                        <span class="cantidad-producto-carrito">1</span>
-                        <p class="titulo-producto-carrito">Polera Wally and Eva</p>
-                        <span class="precio-producto-carrito">s/110.00</span>
+	</header>
 
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                      </svg>
-                </div>
-                <div class="cart-total">
-                    <h3>Total:</h3>
-                    <span class="total-pagar">s/110.00</span>
-                </div>
-            </div>
+	<div class="container-items">
 
-        </div>
+		<div class="item">
+			<figure>
+				<img src="https://fivaindustriatextil.com/wp-content/uploads/2023/02/polera1.jpg" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Eva and Wally</h2>
+				<p class= "price">$110.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
 
-    </header>
+		<div class="item">
+			<figure>
+				<img src="https://fivaindustriatextil.com/wp-content/uploads/2023/02/polera6.jpg.webp" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Panditas</h2>
+				<p class= "price">$110.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
 
-    <div class="containeritems">
-        <div class="item">
-            <figure>
-                <img src="https://scontent.flim2-2.fna.fbcdn.net/v/t39.30808-6/331578812_777843017189017_4649520177880740289_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4bnD6VBIO4cQ7kNvgEK0I6s&_nc_zt=23&_nc_ht=scontent.flim2-2.fna&_nc_gid=AwlicZ8MZAx8Xr-xYqjPoay&oh=00_AYA1PSG_jQjDcCz8ebPUxwDXr3Maf9ziZudA89IjFBlL0A&oe=6746B276" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Polera de Stitch and Angela</h2>
-                <p class="price">2 x s/110.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://i0.wp.com/elricostore.com/wp-content/uploads/2021/09/pareja_polera_goku_y_milk_love.png?fit=500%2C500&ssl=1" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Polera de Milk and Goku</h2>
-                <p class="price">2 x s/110.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t1.6435-9/56184232_1073243516200593_1280785653126135808_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mGEzSXl4Re0Q7kNvgEBr7OP&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=Ann5eWE4vRViLqSrNcnex93&oh=00_AYAJeHQhtm0oh8pbIVs5dKkf-G7AQV_NuqEfNDIAocAd6Q&oe=67686884" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Polera de Mickey and Minnie</h2>
-                <p class="price">2 x s/110.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://http2.mlstatic.com/D_NQ_NP_756879-MPE49453044901_032022-O.webp" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Polera de Wally and Eva</h2>
-                <p class="price">2 x s/110.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t39.30808-6/273955740_132684115921208_8104675734836684995_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FkWWmgPKR0oQ7kNvgGP8GTJ&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=Ay3-s2fBTnZezMSlccJ5UAt&oh=00_AYAOu6QPb-Q8c3PuQMPCpBDV3REdurtYPo0tW8lwgtaQPQ&oe=6746F8AA" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Polera de dragones</h2>
-                <p class="price">2 x s/110.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t39.30808-6/273737105_132684082587878_4724441601207293986_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wTMWX2C2m1wQ7kNvgFM_58k&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=AvPtk_Hv1vTH702KfdfkaUT&oh=00_AYBUSKiOrMkv1PjIkrTJQVcY34iVpLuXLVq2_2zu-XUVTA&oe=6746F859" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Polera Ideal</h2>
-                <p class="price">2 x s/110.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://scontent.flim26-1.fna.fbcdn.net/v/t1.6435-9/41792161_1098201067004177_519795358981685248_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=tpMDdi_paAMQ7kNvgEWkE15&_nc_zt=23&_nc_ht=scontent.flim26-1.fna&_nc_gid=ARJJvvxPd5A-iQKj8efEk_3&oh=00_AYCR5HoQRijC72G8NPzTl0L8DYXmxEGLWRbR9Hwm3Y3SdQ&oe=676869A6" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Agregar iniciales</h2>
-                <p class="price">s/5.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://i.pinimg.com/originals/0d/0f/87/0d0f87c29bf382ac8796bf406da163fb.jpg">
-            </figure>
-            <div class="info-product">
-                <h2>Agregar nombres</h2>
-                <p class="price">s/5.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeY_C_C3kM1rZC4pRjRObNrbx1oP5g3JFjKg&s" 
-                alt="producto">
-            </figure>
-            <div class="info-product">
-                <h2>Agregar fecha personalizada</h2>
-                <p class="price">s/3.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
+		<div class="item">
+			<figure>
+				<img src="https://fivaindustriatextil.com/wp-content/uploads/2023/02/polera3.jpg.webp" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Mario Bross</h2>
+				<p class= "price">$110.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		
+		<div class="item">
+			<figure>
+				<img src="https://fivaindustriatextil.com/wp-content/uploads/2023/02/polera5.jpg.webp" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Spider-Man</h2>
+				<p class= "price">$110.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
 
+		<div class="item">
+			<figure>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyCpCcZx2HLBqTesN1XSrl0qxXLPq1GkrtrhI4dO2oLQa382HtBpF1GN-WzsQ4wAC6IE&usqp=CAU" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Ideal para ti</h2>
+				<p class= "price">$110.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
 
-    </div>
+		<div class="item">
+			<figure>
+				<img src="https://i.pinimg.com/736x/d0/1b/a9/d01ba9d3f66f175cad48c3d3121e4db5.jpg" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Bugs Bunny</h2>
+				<p class= "price">$110.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
 
-    <script src="index.js"></script>
+		<div class="item">
+			<figure>
+				<img src="https://img.clasf.pe/2019/12/11/Poleras-Con-Capucha-Personalizados-Para-Parejas-20191211203642.8217120015.jpg" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Agregar Nombres</h2>
+				<p class= "price">$5.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<figure>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXf2wJlEL1YMLy0oGKa0TFdU346mNrHB_lg&s" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Agregar Fecha</h2>
+				<p class= "price">$5.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+		<div class="item">
+			<figure>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtVW6J1Nj_r8lnx8YjzUyy0WTFP6R5HKS4HZdJoFk8_gAZ4rcOWm-EHyaBOXTHJMcRRK4&usqp=CAU" alt="producto"
+				>
+			</figure>
+			<div class="info-product">
+				<h2>Agregar Iniciales</h2>
+				<p class= "price">$3.00</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="index.js"></script>
 
 
 </body>
-
 </html>
